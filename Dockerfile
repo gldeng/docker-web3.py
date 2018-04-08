@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 RUN apt-get update && apt-get install -y libssl-dev \
   && apt install -y netcat-openbsd \
   && git clone https://github.com/ethereum/web3.py.git ./ \
-  && git checkout tags/v3.16.5 \
+  && git checkout tags/v4.0.0 \
   && echo amqpy >> requirements-dev.txt \
   && echo py-solc >> requirements-dev.txt \
   && pip install -r requirements-dev.txt \
